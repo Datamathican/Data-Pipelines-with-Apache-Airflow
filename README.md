@@ -35,3 +35,14 @@ Data-Pipelines-Airflow
 │       └── data_quality.py     # Data validation logic
 ├── create_tables.sql           # SQL DDL for Redshift schema
 └── README.md
+
+🚀 How to Run
+Prerequisites: Create an IAM user and a Redshift Serverless workgroup in AWS.
+
+S3 Setup: Copy the source data from s3://udacity-dend/ to your own S3 bucket using the AWS CLI.
+
+Airflow Connections: Define aws_credentials and redshift connections in the Airflow UI.
+
+Schema: Run the queries in create_tables.sql in your Redshift editor.
+
+Trigger: Turn the DAG on in the Airflow Web Server (localhost:8080).
